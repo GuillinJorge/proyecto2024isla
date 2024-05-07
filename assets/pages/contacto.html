@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <!-- Encabezado -->
+    </header>
+
+    <main>
+        <h1>Contacto</h1>
+        <form id="contactForm" action="#" method="post">
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Correo electrónico" required>
+            <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+            <input type="checkbox" name="suscripcion" id="suscripcion">
+            <label for="suscripcion">Suscribirse a nuestro boletín</label>
+            <select name="motivo" required>
+                <option value="">Seleccionar motivo de contacto</option>
+                <option value="consulta">Consulta</option>
+                <option value="comentario">Comentario</option>
+                <option value="solicitud">Solicitud</option>
+            </select>
+            <input type="file" name="archivo">
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+        <!-- Pie de página -->
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
