@@ -1,20 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Primer encuentro con Javascript ✨</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
+    <header>
+    <div class="container">
+        <div class="logo">
+            <img src="./assets/img/logo-isal.png" alt="">
+            
+          </div>
+          <nav>
+            <ul class="topnav">
+                <li><a class= "active" href="./index.html">Home</a></li>
+                <li><a href="./assets/pages/quienes_somos.html">¿Quiénes somos?</a></li>
+                <li><a href="./assets/pages/tarifas.html">Tarifas</a></li>
+                <li class="right"><a href="./assets/pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        
+            
+          
+        </div>
+    </header>
+
+    <main>
+        <div id="theCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicadores -->
+            <ol class="carousel-indicators">
+              <li data-target="#theCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#theCarousel" data-slide-to="1"></li>
+              <li data-target="#theCarousel" data-slide-to="2"></li>
+              <li data-target="#theCarousel" data-slide-to="3"></li>
+              
+            </ol>
+        
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="./assets/img/galeria/imagen01.jpg" alt="Ilustracion" > 
+                 <div class="carousel-caption d-none d-md-block">
+            <h3>Gusti Ilustración</h3>
+            <p>Exposición</p>
+          </div>
+              </div>
+        
+                   
+              <div class="item">
+                <img src="./assets/img/galeria/imagen02.jpg" alt="fotografia" width="600" height="424"> 
+                 <div class="carousel-caption d-none d-md-block">
+            <h3> Piscina con Hidromasaje</h3>
+            <p>Los 365 dias del año</p>
+          </div>
+              </div>
+        
+             <div class="item">
+                <img src="./assets/img/galeria/imagen03.jpg" alt="pintura" width="600" height="424">
+                 <div class="carousel-caption d-none d-md-block">
+            <h3>DoArt Pintura</h3>
+            <p>Curso</p>
+          </div>
+              </div>
+               <div class="item">
+                <img src="./assets/img/galeria/imagen05.jpg" alt="diseno" width="600" height="424"> 
+                 <div class="carousel-caption d-none d-md-block">
+            <h3>UX UI Diseño Gráfico</h3>
+            <p>Curso</p>
+          </div>
+              </div>
+        
+        
+            <a class="left carousel-control" href="#theCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">anterior</span>
+            </a>
+            <a class="right carousel-control" href="#theCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">siguiente</span>
+            </a>
+          </div>
+        </div>
+        
+    </main>
+
+    <footer>
+        <section class="contenedor-footer" id="contacto">
+            <div class="content-foo">
+                <a href="#"> <img src="./assets/img/galeria/facebook.png" alt="Facebook">Facebook</a>
+            </div>
+            <div class="content-foo">
+                <a href="#"> <img src="./assets/img/galeria/social.png" alt="Instagram">Instagram</a>
+            </div>
+        </section>
+        <p> &copy; 2024 Grupo7 - Todos los derechos reservados.</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
-
-
 </body>
-
-<script src="./assets/js/index.js"> 
-
-</script>
-
-
 </html>
