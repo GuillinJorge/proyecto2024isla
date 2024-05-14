@@ -5,7 +5,7 @@
  
  
  header {
-     padding: 5px 0 5px 0;
+     padding:  5px 0 5px 0;
      width: 100%;
      height: 100%;
      background-size: cover; 
@@ -17,7 +17,7 @@
      display: flex;
      justify-content: space-between;
      align-items: top;
-     background-image: url(http://www.islacaribeta.com.ar/images/imagen08.jpg);
+     background-image: url('assets/img/foto_home.jpg');
      background-size: cover;
      background-position: center;
      width: auto;
@@ -25,19 +25,26 @@
  }
  
  .logo img {
-     
-     display: inline-flex;
+     display: inline-block;
      flex-wrap: nowrap;
+     max-width: 100%; /* Valor nuevo*/
      width: 100px; /* Ajusta el tamaño de la imagen según sea necesario */
      height: auto;
  }
  
  nav ul {
-     list-style: none; padding: 0; margin: 0; display: inline-block;
+     list-style: none;
+     padding: 0;
+     margin: 0;
+     text-align: center;
+     display: inline-block;
  }
  
  nav ul li {
-     margin-right: 10px;
+    text-align: center;
+    justify-content: space-between;
+    display: inline-block; /* valor nuevo*/
+    margin-right: 10px;
  }
  
  nav ul li:last-child {
@@ -45,9 +52,11 @@
  }
  
  nav ul li a {
+     display: block; /* */
+     padding: 10px;
      font-size: large;
      text-decoration: none; color: #fff; 
-     padding: 8px 15px;
+     /*padding: 8px 15px;*/ 
      transition: all 0.3s ease; /* Agrega una transición suave */
  }
  
@@ -77,12 +86,29 @@
  
  ul.topnav li.right{float: right;}
  
- @media screen and (max-width: 600px ){
+ /* @media screen and (max-width: 600px ){
      ul.topnav li.right, 
      ul.topnav li {float: none}
  }
- 
- 
+  */
+
+  @media screen and (max-width: 600px) {
+    .logo {
+        text-align: center;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 5px; /* Espacio entre cada elemento de la lista */
+    }
+}
+
+
+
  main img {
      width: 100%;
      height: 100%;
