@@ -79,9 +79,23 @@ body{
 }
 
 /* */
+main {
+  margin-top: 90px;
+}
 
+.section {
+  margin-bottom: 20px; /* Espacio entre cada sección */
+  padding: 20px; /* Espacio interno dentro de cada sección */
+  background-color: #f2f2f2; /* Color de fondo de las secciones */
+  border-radius: 10px; /* Borde redondeado para las secciones */
+}
 
-
+/* Estilos para las secciones en dispositivos móviles */
+@media screen and (max-width: 600px) {
+  .section {
+      padding: 10px; /* Reduce el espacio interno en dispositivos móviles */
+  }
+}
 
 /* FOOTER */
 

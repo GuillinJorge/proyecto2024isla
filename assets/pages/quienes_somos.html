@@ -3,33 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiénes Somos</title>
+    <title>¿Quienes somos? 📕 </title>
     <link rel="stylesheet" href="./assets/css/style.css">
-</head>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>  
+  </head>
 <body>
-    <header>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./quienes_somos.html">Quiénes Somos</a></li>
-                    <li><a href="./assets/pages/tarifas.html">Tarifas</a></li>
-                    <li><a href="./assets/pages/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-        <!-- Encabezado -->
+    <header class="header">
+      
+        <img class="logo" src="./assets/img/logo_islas.jpeg" alt="">
+       
+        <input type="checkbox" id="check">       
+        <label for="check" class="icons">
+          <i class='bx bx-menu' id="menu-icon"></i>
+          <i class='bx bxs-x-circle' id="close-icon"></i>
+        </label>
+        <nav class="navbar">
+          <a href="./index.html" style="--i:0;"><i class='bx bx-home'></i> Home</a>
+          <a href="./quienes_somos.html" style="--i:1;"><i class='bx bx-receipt'></i> Acerca</a>
+          <a href="#" style="--i:2;"><i class='bx bx-photo-album'></i> Galeria</a>
+          <a href="#" style="--i:3;"><i class='bx bx-book'></i> Servicios</a>
+          <a href="./contacto.html" style="--i:4;"><i class='bx bx-mail-send'></i> Contacto</a>
+
+        </nav>
     </header>
 
-    <main>
-        <h1>Quiénes Somos</h1>
-        <!-- Contenido de la página Quiénes Somos -->
+    <main class="container">
+      <section class="section">
+        <h2>¿Quienes somos?</h2>
+        <!-- Contenido de la sección Novedades -->
+    </section>
+    
     </main>
 
     <footer>
-        <!-- Pie de página -->
-    </footer>
+        <div class="social-media">
+          <a href="#"><i class='bx bxl-twitter'></i></a>
+          <a href="#"><i class='bx bxl-facebook'></i></a>
+          <a href="#"><i class='bx bxl-instagram-alt'></i></a>
 
-    <script src="scripts.js"></script>
+        </div>
+        <p> &copy; 2024 Grupo7 - Todos los derechos reservados.</p>
+    </footer>
+    
+    <script src="./assets/js/index.js"></script>
+    
 </body>
 </html>
