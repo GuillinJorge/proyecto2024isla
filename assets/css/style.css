@@ -1,161 +1,202 @@
 * {
-    /* background-color: rgb(15, 95, 64);*/
-     font-family: Verdana, Geneva, Tahoma, sans-serif;
- }
- 
- 
- header {
-     padding:  5px 0 5px 0;
-     width: 100%;
-     height: 100%;
-     background-size: cover; 
-     background-attachment: fixed;
-     position: relative;
- }
- 
- .container {
-     display: flex;
-     justify-content: space-between;
-     align-items: top;
-     background-image: url('assets/img/foto_home.jpg');
-     background-size: cover;
-     background-position: center;
-     width: auto;
-     height: 500px;
- }
- 
- .logo img {
-     display: inline-block;
-     flex-wrap: nowrap;
-     max-width: 100%; /* Valor nuevo*/
-     width: 100px; /* Ajusta el tamaño de la imagen según sea necesario */
-     height: auto;
- }
- 
- nav ul {
-     list-style: none;
-     padding: 0;
-     margin: 0;
-     text-align: center;
-     display: inline-block;
- }
- 
- nav ul li {
-    text-align: center;
-    justify-content: space-between;
-    display: inline-block; /* valor nuevo*/
-    margin-right: 10px;
- }
- 
- nav ul li:last-child {
-     margin-right: 0;
- }
- 
- nav ul li a {
-     display: block; /* */
-     padding: 10px;
-     font-size: large;
-     text-decoration: none; color: #fff; 
-     /*padding: 8px 15px;*/ 
-     transition: all 0.3s ease; /* Agrega una transición suave */
- }
- 
- nav ul li a:hover {
-     background-color: #ffffff71 ; /* Cambia el color de fondo al pasar el mouse */
-     color: #333; /* Cambia el color del texto al pasar el mouse */
-     border-color: #333; /* Cambia el color del borde al pasar el mouse */
- }
- 
- ul.topnav{
-     list-style-type: none;
-     margin: 0;
-     padding: 0;
-     overflow: hidden;
- }
- 
- ul.topnav li {
-     float: left;
- }
- 
- ul.topnav li a{
-     display: block;
-     text-align: center;
-     padding: 14px  16px;
-     text-decoration: none;
- }
- 
- ul.topnav li.right{float: right;}
- 
- /* @media screen and (max-width: 600px ){
-     ul.topnav li.right, 
-     ul.topnav li {float: none}
- }
-  */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
-  @media screen and (max-width: 600px) {
-    .logo {
-        text-align: center;
-    }
+body{
+  min-height: 100vh;
+  background: url('https://png.pngtree.com/thumb_back/fw800/background/20230521/pngtree-tropical-beach-with-palm-trees-and-clear-blue-water-image_2682990.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* ENCABEZADO */
 
-    nav ul {
-        text-align: center;
-    }
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.3rem 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
 
-    nav ul li {
-        display: block;
-        margin-bottom: 5px; /* Espacio entre cada elemento de la lista */
-    }
+.header::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .1);
+  backdrop-filter: blur(50px);
+  z-index: -1;
+}
+
+.header::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+  transition: .5s;
+}
+
+.header:hover::after{
+  left: 100%;
+}
+
+
+.logo {
+  max-width: 50px;
+}
+
+.navbar a {
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 2.5rem;
+}
+
+#check {
+  display: none;
+}
+
+.icons{
+  position: absolute;
+  right: 5%;
+  font-size: 2.8rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+/* */
+
+
+
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  padding: 60px 0 30px 0;
+  margin: auto;
+  overflow: hidden;
+  
+}
+
+.contenedor-footer{
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #ccc;
+  
+}
+
+.social-media a{
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  text-decoration: none;
+}
+
+.social-media a i {
+  
+  font-size: 24px;
+  color: black;
+}
+
+/* .social-media a {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 20px 0 0 0 ;
+  color: black;
+} */
+
+footer p{
+  
+  text-align: center;
+  font-size: 14px;
+  margin: 20px 0 0 0 ;
+  color: black;
 }
 
 
 
- main img {
-     width: 100%;
-     height: 100%;
- }
- 
- body {
-     margin: 0;
-     padding: 0 10px;
- }
- 
- 
- .carousel-inner > .item > img,
-   .carousel-inner > .item > a > img {
-       width: 50%;
-       margin: auto;
-   }
- 
- footer {
-     padding: 60px 0 30px 0;
-        margin: auto;
-     overflow: hidden;
-     
- }
- 
- footer img{
-     height: 70px;
-     width: auto;
- }
- 
- .contenedor-footer{
-     display: flex;
-     width: 90%;
-     justify-content: space-evenly;
-     margin: auto;
-     padding-bottom: 50px;
-     border-bottom: 1px solid #ccc;
- }
- 
- .content-foo a{
-     padding-bottom: 5px;
-     margin-bottom: 10px;
- }
- 
- footer p{
-     text-align: center;
-     font-size: 12px;
-     margin: 20px 0 0 0 ;
-     color: white;
- }
- 
+/*BREAKPOINTS*/
+
+@media (max-width: 992px) {
+  .header{
+    padding: 1.3rem 5%;
+  }
+  
+}
+
+@media (max-width: 768px){
+  .icons{
+    display: inline-flex;
+  }
+
+  #check:checked~.icons #menu-icon{
+    display: none;
+  }
+
+
+  .icons #close-icon{
+    display: none;
+  }
+
+  #check:checked~.icons #close-icon{
+    display: block;
+  }
+
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(50px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    overflow: hidden;
+    transition: .3s ease;
+  }
+  
+  #check:checked~.navbar{
+    height: 17.7rem;
+    
+  }
+
+  .navbar a {
+    display: block;
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+    text-align: center;
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: .3s ease;
+  }
+
+  #check:checked~.navbar a{
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: calc(.15s * var(--i));
+  }
+
+
+}
