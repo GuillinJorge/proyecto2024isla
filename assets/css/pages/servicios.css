@@ -19,8 +19,8 @@ body{
 /* MAIN */
 
 
-
 .section {
+  margin: 20px;
   margin-bottom: 20px; /* Espacio entre cada sección */
   padding: 20px; /* Espacio interno dentro de cada sección */
   background-color: rgba(170, 64, 64, 0.5); /* Color de fondo de las secciones */
@@ -34,12 +34,16 @@ body {
   background-color: #f2f2f2;
   color: #333;
   margin: 0;
-  margin-top: 50px;
-  padding: 120px;
+ 
 }
 
+main{
+  margin-top: 90px;
+}
+
+
 .tariff-container {
-  align-items: center;
+    align-items: center;
     max-width: 800px;
     margin: 0 auto;
     background-color: #fff;
@@ -49,8 +53,10 @@ body {
   }
   
   h2 {
+    font-weight: bold;
     text-align: center;
-    color: #007bff;
+    color: #0a0a0a;
+    text-shadow:  0.5px 1px whitesmoke;
   }
   
   .tariff {
@@ -66,30 +72,34 @@ body {
   }
   
   .promociones {
-    width: 25%;
-    height: 50%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
-  } 
+    width: 100%; /* Asegura que el contenedor tome todo el ancho disponible */
+    height: auto; /* Ajusta la altura como desees */
+}
 
 .promociones img {
-    max-width: 100%;
+    max-width: 200px; /* Ajusta el tamaño máximo de las imágenes */
     height: auto;
     display: block;
-    margin: 0 auto;
-    width: 75%;
-    height: 75%;
-    object-fit: cover;
     border-radius: 10px;
     border: 2px solid #f2f2f26b;
-    transition: all ease-in-out 0.5s;
-  } 
-  
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
 .promociones img:hover {
-    width: 100%;
-    } 
+  transform: scale(1.5);
+  box-shadow: 0 4px 8px rgba (0, 0, 0, 0.2);
+  } 
 
+@media (max-width: 600px) {
+    .promociones {
+        flex-direction: column;
+    }
 
-
-   
+    .promociones img {
+        max-width: 100%;
+    }
+}
