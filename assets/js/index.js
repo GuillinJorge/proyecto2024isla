@@ -12,11 +12,11 @@ const mess = document.getElementById("message");
 function sendEmail() {
     const bodyMessage = `FullName:${fullName.value}<br>Email:${email.value}<br>Phone Number:${phone.value}<br>Message:${mess.value}`;
     
-    Email.send({
+    email.send({
         Host: "smtp.elasticemail.com",
         Username:"josegonzalez281190@gmail.com",
-        Password: "4E8319B484C24E376290D76F6BA563BB9DFB",
-        To: 'josegonzalez281190@gmail.com',
+        Password:"4E8319B484C24E376290D76F6BA563BB9DFB",
+        To:'josegonzalez281190@gmail.com',
         From:"josegonzalez281190@gmail.com",
         Subject: subject.value,
         Body: bodyMessage

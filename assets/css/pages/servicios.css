@@ -1,0 +1,64 @@
+@import url('/assets/css/header/header.css');
+@import url('/assets/css/main/main.css');
+@import url('/assets/css/footer/footer.css');
+
+
+/* SECCIÓN SERVICIOS Y TARIFAS*/
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+  margin: 0;
+  margin-top: 50px;
+  padding: 120px;
+}
+
+.tariff-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #007bff;
+  }
+  
+  .tariff {
+    margin-bottom: 20px;
+  }
+  
+  .tariff h3 {
+    color: #4CAF50;
+  }
+  
+  .tariff p {
+    margin: 5px 0;
+  }
+  
+  .promociones {
+    width: 25%;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+  } 
+
+.promociones img {
+    width: 75%;
+    height: 75%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #f2f2f26b;
+    transition: all ease-in-out 0.5s;
+  } 
+  
+.promociones img:hover {
+    width: 100%;
+    } 
+
+   
