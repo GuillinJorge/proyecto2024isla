@@ -19,7 +19,7 @@ body{
 /* MAIN */
 
 main {
-  margin-top: 120 px;
+  margin-top: 120px;
 }
 
 .section {
@@ -31,8 +31,63 @@ main {
 }
 
 
+
 /* Formulario de contacto */
 
+.contact-form {
+  margin: 0 auto;
+  width: 400px;
+
+  background: #fff;
+  padding: 1em;
+  border-radius: 1em;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #0056b3;
+}
+
+.captcha {
+  margin-bottom: 15px;
+}
+
+#formMessage {
+  margin-top: 20px;
+  text-align: center;
+}
 
   
   @media (max-width: 991px) {

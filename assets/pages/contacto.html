@@ -29,23 +29,32 @@
     </header>
 
     <main>
-        <div>
-        <form  class="section"  name="contact" method="POST" data-netlify="true" netlify >
-            
-              <label>Escribe tu nombre: <input type="text" name="name" placeholder="escribe tu nombre"/></label>
-                <br>
-              <label>Escribe tu email: <input type="email" name="email" placeholder="escribe tu email"/></label>
-                <br>
-              <label>Tu consulta: <select name="role[]" multiple>
-                <option value="reservas">Reserva</option>
-                <option value="consultas">Consulta</option>
-                <option value="socio">Socio</option>
-              </select></label>
-              <br>
-              <label>Escribe tu mensaje: <textarea name="message" placeholder="escribe tu mensaje"></textarea></label>
-              <br>
-              <button type="submit">Enviar</button>
-          </form>
+        <div class="contact-form">
+            <h2>Contacto</h2>
+            <br>
+            <p>Completa el siguiente formulario para comunicarte con nosotros</p>
+            <br>
+            <form id="contactForm">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="subject">Asunto</label>
+                <input type="text" id="subject" name="subject" required>
+    
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" required></textarea>
+    
+                <div class="captcha">
+                    <label for="captcha">¿Cuánto es 3 + 4?</label>
+                    <input type="text" id="captcha" name="captcha" required>
+                </div>
+    
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="formMessage"></div>
         </div>
     </main>
 
@@ -59,7 +68,7 @@
         <p> &copy; 2024 Grupo7 | Maria Elena D Agostino  Jorge Guillin – Jennifer Segovia Suarez – Tatiana Terán | Todos los derechos reservados</p>
       </footer>
    
-    <script src="/assets/js/index.js"></script>
+    <script src="/assets/js/email.js"></script>
     
 </body>
 </html>
