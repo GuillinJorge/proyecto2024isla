@@ -2,81 +2,38 @@
 @import url('/assets/css/main/main.css');
 @import url('/assets/css/footer/footer.css');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+  min-height: 100vh;
+  background: url('/assets/img/fondo-atardecer-1.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* MAIN */
+
+main {
+  margin-top: 120 px;
+}
+
+.section {
+  margin-top: 90px;
+  margin-bottom: 20px; /* Espacio entre cada sección */
+  padding: 20px; /* Espacio interno dentro de cada sección */
+  background-color: rgba(170, 64, 64, 0.5); /* Color de fondo de las secciones */
+  border-radius: 10px; /* Borde redondeado para las secciones */
+}
+
+
 /* Formulario de contacto */
 
 
-.form-content {
-    padding: 50px;
-    box-sizing: border-box;
-    width: 100%;
-    max-width: 1000px;
-    border-radius: 25px;
-    background-color: #555764;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-position: center;
-    margin: 0 auto;
-  }
-  
-  .form-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .form-container h2 {
-    color: #f4f6f9;
-    font-size: 40px;
-    margin-bottom: 25px;
-  }
-  
-  .form-container form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  
-  .form-container label {
-    font-size: 17px;
-    color: #959aab;
-    margin-bottom: 10px;
-  }
-  
-  .form-container input,
-  textarea {
-    padding: 17px 14px;
-    background-color: #333646;
-    border: none;
-    font-size: 15px;
-    color: #f4f6f9;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-sizing: border-box;
-  }
-  
-  .form-container input:focus,
-  textarea:focus {
-    outline: 1px solid #1e92e9;
-  }
-  
-  .form-container .btn {
-    background-color: #1e92e9;
-    width: 150px;
-    align-self: flex-end;
-    cursor: pointer;
-    padding: 10px 20px;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-  }
-  
-  .form-container .btn:hover {
-    background-color: #219bf9;
-  }
   
   @media (max-width: 991px) {
     .form-container form {
