@@ -5,6 +5,6 @@ from .models import Reserva
 admin.site.register(Reserva)
 
 
-#@admin.register(Reserva)
-#class ReservaAdmin(admin.ModelAdmin):
+# @admin.register(Reserva)
+# class ReservaAdmin(admin.ModelAdmin):
 #    pass

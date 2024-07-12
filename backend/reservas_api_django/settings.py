@@ -17,11 +17,7 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-CUSTOM_APPS = [
-    "app_reserva",
-    "rest_framework",
-    "corsheaders"
-]
+CUSTOM_APPS = ["app_reserva", "rest_framework", "corsheaders"]
 
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -39,7 +35,7 @@ INSTALLED_APPS += CUSTOM_APPS
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
-    'corsheaders.middleware.CorsMiddleware',
+    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
@@ -72,13 +68,13 @@ WSGI_APPLICATION = "reservas_api_django.wsgi.application"
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'reserva_db',
-        'USER': 'root',
-        'PASSWORD': 'codo_codo',
-        'HOST': 'localhost',  # o el nombre del servicio si estás usando Docker Compose
-        'PORT': '3307',
+    "default": {
+        "ENGINE": "django.db.backends.mysql",
+        "NAME": "reserva_db",
+        "USER": "root",
+        "PASSWORD": "codo_codo",
+        "HOST": "127.0.0.1",  # o el nombre del servicio si estás usando Docker Compose
+        "PORT": "3307",
     }
 }
 
@@ -125,12 +121,12 @@ STATIC_URL = "static/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # Security settings
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[::1]']
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "[::1]"]
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://localhost:8000',
-    'http://localhost:8000',  # if also using http
-    'http://localhost:8080'
+    "https://localhost:8000",
+    "http://localhost:8000",  # if also using http
+    "http://localhost:8080",
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
