@@ -7,4 +7,4 @@ admin.site.register(Reserva)
 
 #@admin.register(Reserva)
 #class ReservaAdmin(admin.ModelAdmin):
-    #pass
+#    pass

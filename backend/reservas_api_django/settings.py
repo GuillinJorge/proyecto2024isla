@@ -18,7 +18,7 @@ ALLOWED_HOSTS = []
 
 # Application definition
 CUSTOM_APPS = [
-    "app_pelicula",
+    "app_reserva",
     "rest_framework",
     "corsheaders"
 ]
@@ -78,7 +78,7 @@ DATABASES = {
         'USER': 'root',
         'PASSWORD': 'codo_codo',
         'HOST': 'localhost',  # o el nombre del servicio si estás usando Docker Compose
-        'PORT': '3308',
+        'PORT': '3307',
     }
 }
 
