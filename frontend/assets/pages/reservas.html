@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas ☼ </title>
+    <link rel="stylesheet" href="/frontend/assets/css/pages/reservas.css">
+    <link type="image/png" sizes="32x32" rel="icon" href="/frontend/assets/img/favicon/icons8-isla-color-32.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>  
+  </head>
+<body>
+    <header class="header">
+      
+        <img class="logo" src="/frontend/assets/img/logo_islas.jpeg" alt="">
+       
+        <input type="checkbox" id="check">       
+        <label for="check" class="icons">
+          <i class='bx bx-menu' id="menu-icon"></i>
+          <i class='bx bxs-x-circle' id="close-icon"></i>
+        </label>
+        <nav class="navbar">
+            <a href="/frontend/index.html" style="--i:0;"><i class='bx bx-home'></i> Home</a>
+            <a href="/frontend/assets/pages/quienes_somos.html" style="--i:1;"><i class='bx bx-receipt'></i> Acerca</a>
+            <a href="/frontend/assets/pages/galeria.html" style="--i:2;"><i class='bx bx-photo-album'></i> Galeria</a>
+            <a href="/frontend/assets/pages/servicios.html" style="--i:3;"><i class='bx bx-book'></i> Servicios</a>
+            <a href="/frontend/assets/pages/reservas.html" style="--i:4;"><i class='bx bx-calendar'></i> Reservas</a>
+            <a href="/frontend/assets/pages/contacto.html" style="--i:5;"><i class='bx bx-mail-serd'></i> Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Reservas INVIERNO 24'</h1>
+    <hr>
+    <div class="contact-form">
+    <section id="crear_reserva">
+        <form id="crear_reserva_form">
+            <label for="nombre">Ingresar Apellido y Nombre</label>
+            <input type="text" name="nombre" id="nombre">
+            <br>
+            <label for="dias">Ingresar la cantidad de dias de estadia</label>
+            <input type="text" name="dias" id="dias">
+            <br>
+            <label for="habitacion">Ingresar el tipo de habitación para su estadia</label>
+            <select name="habitacion" id="habitacion">
+                <option value="simple">Simple</option>
+                <option value="doble">Doble</option>
+                <option value="triple">Triple</option>
+                <option value="cuadruple">Cuadruple</option>
+                <option value="cabana_simple">Cabaña Simple</option>
+                <option value="cabana_doble">Cabaña Doble</option>
+                <option value="cabana_cuadruple">Cabaña Cuadruple</option>
+                <option value="suite_presidencial">Suite Presidencial</option>
+            </select>
+            <br>
+            <label for="fecha_release">Ingresar la fecha de ingreso a nuestro hotel</label>
+            <input type="date" name="fecha_release" id="fecha_release">
+            <br>
+            <button id="btn-post"> Enviar Reserva</button>
+        </form>
+        <div id="success-message">¡Reserva realizada correctamente!</div>
+    </section>
+    <hr>
+    <section id="mostrar_reservas">
+        <button id="btn-get">Mostrar Reservas</button>
+        <div id="reservas"></div>        
+    </section>
+        
+</div>    
+      
+</main>
+
+    <footer>
+        <div class="social-media">
+          <a href="#"><i class='bx bxl-twitter'></i></a>
+          <a href="#"><i class='bx bxl-facebook'></i></a>
+          <a href="https://www.instagram.com/elenjorjenntatt?igshid=YjNoYjIyMTZ2cGtt"><i class='bx bxl-instagram-alt'></i></a>
+
+        </div>
+        <p> &copy; 2024 Grupo7 | Maria Elena D Agostino  Jorge Guillin – Jennifer Segovia Suarez – Tatiana Terán | Todos los derechos reservados</p>
+      </footer>
+   
+<script src="/frontend/statics/js/index.js"></script>
+    
+</body>
+</html>
