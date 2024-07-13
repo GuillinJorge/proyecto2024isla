@@ -1,6 +1,6 @@
+from rest_framework import viewsets
 from .models import Reserva
 from .serializer import ReservaSerializer
-from rest_framework import viewsets
 
 
 class ReservaViewSet(viewsets.ModelViewSet):

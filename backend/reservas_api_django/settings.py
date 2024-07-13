@@ -11,13 +11,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-m)-7e%vd&0cbi8!^1-q$!f3u!h%ymc(vsw(rjw4sb0=81_%_qe"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = []
 
 
 # Application definition
-CUSTOM_APPS = ["app_reserva", "rest_framework", "corsheaders"]
+
+CUSTOM_APPS = [
+    "app_reserva",
+    "rest_framework",
+    "corsheaders"
+    ]
 
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -74,7 +76,7 @@ DATABASES = {
         "USER": "root",
         "PASSWORD": "codo_codo",
         "HOST": "127.0.0.1",  # o el nombre del servicio si estás usando Docker Compose
-        "PORT": "3307",
+        "PORT": "3306",
     }
 }
 
@@ -121,12 +123,14 @@ STATIC_URL = "static/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # Security settings
-ALLOWED_HOSTS = ["localhost", "127.0.0.1", "[::1]"]
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[::1]']
 
 CSRF_TRUSTED_ORIGINS = [
     "https://localhost:8000",
     "http://localhost:8000",  # if also using http
-    "http://localhost:8080",
+    "http://localhost:8080"
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
+
+CORS_ORIGIN_WHITELIST = ('http://localhost:5000',)

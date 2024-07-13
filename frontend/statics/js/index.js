@@ -1,7 +1,12 @@
+const HOST = "localhost" 
+const PORT = 8000
+
 const form = document.getElementById("crear_reserva_form");
 const btn = document.getElementById("btn-post");
+
 const successMessage = document.getElementById("success-message");
-const URL_API_BASE = "http://127.0.0.1:8000/api/reserva/";
+const URL_API_BASE = "http://${HOST}:${PORT}/api/reserva/"
+
 
 btn.addEventListener("click", (e) => {
     e.preventDefault();
@@ -25,7 +30,7 @@ btn.addEventListener("click", (e) => {
     .catch(error => console.log({error}));
 });
 
-class Reserva {
+class Reserva{
     constructor({fecha_release, habitacion, id, nombre, dias}) {
         this.fecha_release = fecha_release;
         this.habitacion = habitacion;
